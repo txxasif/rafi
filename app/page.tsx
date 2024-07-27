@@ -14,7 +14,7 @@ export default function Home() {
       <AnimatedSection>
         <ImageGallery />
       </AnimatedSection>
-      {/* <QuoteListWithLamp /> */}
+      <QuoteListWithLamp />
       {/* <AnimatedSection>
         <LampContainer>
           <motion.div
