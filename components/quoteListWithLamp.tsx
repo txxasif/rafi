@@ -1,11 +1,17 @@
+"use client";
 import { motion } from "framer-motion";
 import AnimatedSection from "./animateSection";
 import { LampContainer } from "./ui/lamp";
 import { QuoteCard } from "./QuoteCard";
 import { getQuotes } from "@/axios/api";
 import { IQuote } from "@/types";
-export default async function QuoteListWithLamp() {
-  const quotes = await getQuotes();
+import { useQuery } from "@tanstack/react-query";
+export default function QuoteListWithLamp() {
+  const { data: quotes } = useQuery({
+    queryFn: getQuotes,
+    queryKey: ["quotes"],
+    initialData: [],
+  });
 
   return (
     <>
