@@ -11,6 +11,7 @@ const images = [
   { image: "/images/3.jpg", alt: "Image 3" },
   { image: "/images/4.jpg", alt: "Image 4" },
 ];
+//xxx
 
 export default function ImageGallery() {
   return (
