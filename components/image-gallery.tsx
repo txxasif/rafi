@@ -25,7 +25,7 @@ export default function ImageGallery() {
         }}
         className="w-full max-w-7xl relative z-50"
       >
-        <InfiniteMovingCards items={images} direction="right" speed="slow" />
+        <InfiniteMovingCards items={images} direction="right" speed="normal" />
       </motion.div>
     </LampContainerForImages>
   );
