@@ -10,8 +10,9 @@ const images = [
   { image: "/images/2.jpg", alt: "Image 2" },
   { image: "/images/3.jpg", alt: "Image 3" },
   { image: "/images/4.jpg", alt: "Image 4" },
+  { image: "/images/5.jpg", alt: "Image 5" },
 ];
-//xxx
+//xxxx
 
 export default function ImageGallery() {
   return (
